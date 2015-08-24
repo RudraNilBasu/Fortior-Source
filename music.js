@@ -1,13 +1,14 @@
 #pragma strict
 
-function Start () {
-
+function Awake () 
+{
+	DontDestroyOnLoad(transform.gameObject);
+	if( FindObjectsOfType(GetType()).Length > 1 )
+	{
+		Destroy(gameObject);
+	}
 }
 
-function Update () 
-{
-	if(Input.GetKey(KeyCode.Space))
-	{
-		Application.LoadLevel("menu");
-	}
+function Update () {
+
 }
