@@ -1,13 +1,9 @@
 #pragma strict
 
-function Start () {
-
-}
-
 function Update () 
 {
 	if(Input.GetKey(KeyCode.Space))
 	{
-		Application.LoadLevel("menu");
+		Application.LoadLevel("menu"); // Loading the Level named "menu"
 	}
 }
